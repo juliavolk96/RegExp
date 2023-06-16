@@ -46,7 +46,7 @@ describe('Validator', () => {
       expect(isValid).toBe(true);
     });
 
-    test('должен возвращать false для недопустимого имени пользователя, содержащего пробелы', () => {
+    test('возвращает false для недопустимого имени пользователя, содержащего пробелы', () => {
       const username = 'john doe';
       const isValid = Validator.validateUsername(username);
       expect(isValid).toBe(false);
